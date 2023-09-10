@@ -1,13 +1,23 @@
 :root {
     --primary-text-color: #212121;
+    --secondary-text-color: #757575;
     --link-hover-color: #2196F3;
     --background-color: #FFF;
     --header-background-color: #FFF;
     --footer-background-color: #2F303A;
     --footer-link-color: rgba(255, 255, 255, 0.60);
+    --blue-text: #2196F3;
+    --black-text: #000;
+    --white-text: #FFF;
+    --container-color: #2F303A;
+    --button-background-color: #F5F4FA;
+    --main-button-hover-color: #2196F3;
+
+
 
 }
 
+/*Global Styles */
 body {
     background-color: var(--background-color);
     font-family: "Roboto", sans-serif;
@@ -23,6 +33,7 @@ body {
     text-decoration: none;
 }
 
+/* Navigation */
 .main-navigation a {
     color: var(--primary-text-color);
     font-size: 14px;
@@ -35,6 +46,11 @@ body {
     color: var(--link-hover-color);
 }
 
+#current {
+    color: var(--link-hover-color)
+}
+
+/* Logo */
 .logo {
     font-family: "Raleway", sans-serif;
     font-size: 26px;
@@ -42,18 +58,20 @@ body {
     line-height: normal;
 }
 
+/* Text Colors*/
 .blue-text {
-    color: #2196F3
+    color: var(--blue-text);
 }
 
 .black-text {
-    color: #000
+    color: var(--black-text);
 }
 
 .white-text {
-    color: #fff;
+    color: var(--white-text);
 }
 
+/* Remove List Bullets */
 .main-navigation ul,
 .services ul,
 .what-we-do ul,
@@ -62,8 +80,9 @@ body {
     list-style-type: none;
 }
 
+/* Contact Info Links*/
 .contact-info a {
-    color: #757575;
+    color: var(--secondary-text-color);
     font-size: 14px;
     font-weight: 500;
     line-height: normal;
@@ -74,25 +93,27 @@ body {
     color: var(--link-hover-color);
 }
 
-
+/* Container Styles */
 .container {
-    background-color: #2F303A;
+    background-color: var(--container-color);
     text-align: center;
 
 }
 
+/* Main Title */
 .main-title {
-    color: #FFF;
+    color: var(--white-text);
     font-size: 44px;
     font-weight: 900;
     line-height: 136.364%;
     text-transform: uppercase;
 }
 
+/* Buttons */
 .main-button {
-    background-color: #2196F3;
+    background-color: var(--blue-text);
     border: none;
-    color: #FFF;
+    color: var(--white-text);
     text-align: center;
     font-size: 16px;
     font-weight: 700;
@@ -100,7 +121,7 @@ body {
 }
 
 .button {
-    background-color: #F5F4FA;
+    background-color: var(--button-background-color);
     border: none;
     text-align: center;
     font-size: 16px;
@@ -110,8 +131,14 @@ body {
 
 .button:hover,
 .button:focus {
-    background-color: #2196F3;
-    color: #FFF;
+    background-color: var(--link-hover-color);
+    color: var(--white-text);
+}
+
+.main-button:hover,
+.main-button:focus {
+    background-color: var(--main-button-hover-color);
+    color: var(--white-text);
 }
 
 .main-button,
@@ -120,6 +147,7 @@ body {
     cursor: pointer;
 }
 
+/* Service Heading */
 .heading-services {
     width: 270px;
     font-size: 14px;
@@ -128,19 +156,26 @@ body {
     text-transform: uppercase;
 }
 
+/* Service Paragraph*/
 .paragraph-services {
-    color: #757575;
+    color: var(--secondary-text-color);
     line-height: 171.429%;
 }
 
+/* Second Title*/
 .second-title {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
 }
 
+/* Our team Section */
 .our-team {
-    background-color: #F5F4FA;
+    background-color: var(--button-background-color);
+}
+
+.team-members {
+    background-color: var(--background-color);
 }
 
 .team-members h3,
@@ -156,11 +191,12 @@ body {
 }
 
 .profession {
-    color: #757575;
+    color: var(--secondary-text-color);
     font-size: 16px;
     line-height: normal;
 }
 
+/* Second Title for Porducts and Services*/
 .second-title-products-services {
     font-size: 18px;
     font-weight: 700;
@@ -168,17 +204,18 @@ body {
 }
 
 .type {
-    color: #757575;
+    color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 187.5%;
 }
 
+/* Global Footer */
 .global-footer {
     background-color: var(--footer-background-color);
 }
 
 .footer-address {
-    color: #FFF;
+    color: var(--white-text);
     font-size: 14px;
     font-style: normal;
     line-height: normal;
