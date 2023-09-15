@@ -11,7 +11,7 @@
     --white-text: #FFF;
     --container-color: #2F303A;
     --button-background-color: #F5F4FA;
-    --main-button-hover-color: #2196F3;
+    --main-button-hover-color: #188CE8;
 
 
 
@@ -116,6 +116,7 @@ body {
     color: var(--white-text);
     text-align: center;
     font-size: 16px;
+    font-family: inherit;
     font-weight: 700;
     line-height: 187.5%;
 }
@@ -125,6 +126,7 @@ body {
     border: none;
     text-align: center;
     font-size: 16px;
+    font-family: inherit;
     font-weight: 500;
     line-height: 165.5%;
 }
